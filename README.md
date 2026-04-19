@@ -7,9 +7,7 @@ finishes a response and lowers it as soon as you send a new message.
 It's a tiny ambient signal you can see from the corner of your eye — no
 terminal bells, no polling your screen.
 
-![Wiring diagram](docs/wiring-diagram.png)
-
-> Add your own hero photo / build shots here.
+[![Demo video](https://img.youtube.com/vi/u6cx7Jbch5Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=u6cx7Jbch5Y)
 
 ## How it feels
 
@@ -25,26 +23,38 @@ handy for notifications or testing.
 
 | Part                  | Notes                                                           |
 | --------------------- | --------------------------------------------------------------- |
-| RF-Nano V3.0          | Arduino Nano clone with integrated NRF24L01 + CH340 USB-serial. Micro-USB. |
+| RF-Nano V3.0          | Arduino Nano clone with integrated NRF24L01 + CH340 USB-serial. Sold in Micro-USB and USB-C variants — any works. |
 | Geekservo 270°        | 3–5 V programmable servo with Lego-compatible horn.             |
 | Dupont M-M jumpers    | Or solder directly to the Nano (see note below).                |
 | Lego bricks + flag piece | Any small mailbox-style build that fits a 2x2 servo and a flag. |
-| USB cable (Micro-USB) |                                                                 |
+| USB cable             | Match the Nano variant (Micro-USB or USB-C).                     |
 
 On macOS the CH340 is recognised by the built-in `AppleUSBCHCOM` driver —
 no install needed. The port appears as `/dev/cu.usbserial-*`.
 
-### Build notes
-
-- If you want a compact build inside a small Lego mailbox, you can cut the
-  Nano's header pins and solder the servo wires directly to the pads. Not
-  required if your enclosure is big enough for the pin headers.
-- The NRF24L01 module on the RF-Nano uses **D9–D13**. Keep those pins free
-  if you plan to extend the project.
-
 ### Lego model
 
-> Add the link to your Studio / BrickLink model here before publishing.
+The mailbox was designed in Studio before buying any bricks, so the build was
+known to fit around the RF-Nano and the Geekservo from day one.
+
+![Lego render](docs/lego-render.gif)
+
+> Add the link to your Studio / BrickLink model here.
+
+### Build notes
+
+- The NRF24L01 module on the RF-Nano uses **D9–D13**. Keep those pins free
+  if you plan to extend the project.
+- Clip the Geekservo horn onto the flag piece first, then fit the servo
+  into the mailbox — that way you can test rotation range before committing.
+
+  ![Fitting the servo](docs/servo-fit.webp)
+
+- To fit everything inside a compact mailbox, you can cut the Nano's header
+  pins flush and solder the servo wires directly to the board pads (5V, GND,
+  D3). Not required if your enclosure is tall enough to keep the headers.
+
+  ![Soldering the servo wires to the Nano](docs/soldering.webp)
 
 ## Wiring
 
@@ -54,7 +64,7 @@ no install needed. The port appears as `/dev/cu.usbserial-*`.
 | Brown (GND)   | GND     |
 | Orange (signal) | D3    |
 
-See `docs/wiring-diagram.png`.
+![Wiring diagram](docs/wiring-diagram.png)
 
 ## Flashing the sketch
 
@@ -185,7 +195,10 @@ Common causes:
 │   ├── notify-arduino.py     # Python script called by Claude Code hooks
 │   └── settings.example.json # Snippet to merge into ~/.claude/settings.json
 ├── docs/
-│   └── wiring-diagram.png
+│   ├── wiring-diagram.png
+│   ├── lego-render.gif
+│   ├── servo-fit.webp
+│   └── soldering.webp
 ├── LICENSE
 └── README.md
 ```
