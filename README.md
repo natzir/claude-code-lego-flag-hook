@@ -59,6 +59,12 @@ fully buildable as designed; the substitution is only cosmetic.
 
   ![Soldering the servo wires to the Nano](docs/soldering.webp)
 
+- Leave a small gap at the back of the mailbox for the USB cable to exit.
+  Top-down view of the finished assembly with the Nano, the servo and the
+  cable routed out the back:
+
+  ![Top-down view of the finished assembly](docs/final-top-view.webp)
+
 ## Wiring
 
 | Geekservo     | RF-Nano |
@@ -201,7 +207,8 @@ Common causes:
 │   ├── wiring-diagram.png
 │   ├── lego-render.gif
 │   ├── servo-fit.webp
-│   └── soldering.webp
+│   ├── soldering.webp
+│   └── final-top-view.webp
 ├── LICENSE
 └── README.md
 ```
