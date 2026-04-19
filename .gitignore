@@ -1,0 +1,20 @@
+# Arduino build artifacts
+build/
+*.hex
+*.elf
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Claude local settings
+.claude/

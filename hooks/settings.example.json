@@ -1,0 +1,37 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "nohup /usr/bin/python3 /Users/YOU/.claude/hooks/notify-arduino.py U >/dev/null 2>&1 &"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "nohup /usr/bin/python3 /Users/YOU/.claude/hooks/notify-arduino.py D >/dev/null 2>&1 &"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "nohup /usr/bin/python3 /Users/YOU/.claude/hooks/notify-arduino.py D >/dev/null 2>&1 &"
+          }
+        ]
+      }
+    ]
+  }
+}
