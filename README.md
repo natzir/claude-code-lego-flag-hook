@@ -34,11 +34,15 @@ no install needed. The port appears as `/dev/cu.usbserial-*`.
 
 ### Lego model
 
-The mailbox was designed in [Mecabricks](https://mecabricks.com/en/workshop/0DvYleNWj9e)
+I designed the mailbox myself in [Mecabricks](https://mecabricks.com/en/workshop/0DvYleNWj9e)
 before buying any bricks, so the build was known to fit around the RF-Nano
 and the Geekservo from day one.
 
 ![Lego render](docs/lego-render.gif)
+
+The final build deviates slightly from this render — one of the pieces I
+needed never arrived, so I improvised around it. The linked model is still
+fully buildable as designed; the substitution is only cosmetic.
 
 ### Build notes
 
