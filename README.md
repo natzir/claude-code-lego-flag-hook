@@ -60,10 +60,14 @@ fully buildable as designed; the substitution is only cosmetic.
   ![Soldering the servo wires to the Nano](docs/soldering.webp)
 
 - Leave a small gap at the back of the mailbox for the USB cable to exit.
-  Top-down view of the finished assembly with the Nano, the servo and the
-  cable routed out the back:
+  Top-down view of everything laid out inside just before closing the lid —
+  Nano, servo mount and the cable routed out the back:
 
-  ![Top-down view of the finished assembly](docs/final-top-view.webp)
+  ![Internals laid out before closing the lid](docs/internals-before-closing.webp)
+
+- And the finished mailbox with the lid on:
+
+  ![Finished mailbox](docs/final-top-view.webp)
 
 ## Wiring
 
@@ -208,6 +212,7 @@ Common causes:
 │   ├── lego-render.gif
 │   ├── servo-fit.webp
 │   ├── soldering.webp
+│   ├── internals-before-closing.webp
 │   └── final-top-view.webp
 ├── LICENSE
 └── README.md
