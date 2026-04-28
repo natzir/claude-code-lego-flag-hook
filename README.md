@@ -69,6 +69,12 @@ fully buildable as designed; the substitution is only cosmetic.
 
   ![Finished mailbox](docs/final-top-view.webp)
 
+- **Update:** the missing pieces from the original Mecabricks design finally
+  arrived, so the build now matches the render — orange side block included.
+  The improvisation is no longer needed; the model is buildable as designed:
+
+  ![Missing pieces arrived — full build complete](docs/missing-pieces-arrived.webp)
+
 ## Wiring
 
 | Geekservo     | RF-Nano |
@@ -213,7 +219,8 @@ Common causes:
 │   ├── servo-fit.webp
 │   ├── soldering.webp
 │   ├── internals-before-closing.webp
-│   └── final-top-view.webp
+│   ├── final-top-view.webp
+│   └── missing-pieces-arrived.webp
 ├── LICENSE
 └── README.md
 ```
