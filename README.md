@@ -70,8 +70,7 @@ fully buildable as designed; the substitution is only cosmetic.
   ![Finished mailbox](docs/final-top-view.webp)
 
 - **Update:** the missing pieces from the original Mecabricks design finally
-  arrived, so the build now matches the render — orange side block included.
-  The improvisation is no longer needed; the model is buildable as designed:
+  arrived, so the build now matches the render:
 
   ![Missing pieces arrived — full build complete](docs/missing-pieces-arrived.webp)
 
